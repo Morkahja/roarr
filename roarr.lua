@@ -166,7 +166,15 @@ SlashCmdList["ROARR"] = function(raw)
     chat("settings saved.")
 
   elseif cmd == "tutorial" then
-    chat("/roarr watch | slot <n> | chance <0-100> | cd <seconds> | on/off | info | reset | save")
+    chat("ROARR setup guide:")
+    chat("1) /roarr watch  -> press buttons to see slot numbers")
+    chat("2) /roarr slot <n>  -> set which slot triggers emotes")
+    chat("3) /roarr chance <0-100>  -> set chance for emote")
+    chat("4) /roarr cd <seconds>  -> set cooldown between emotes")
+    chat("5) /roarr on/off  -> enable or disable ROARR")
+    chat("6) /roarr info  -> show current settings")
+    chat("7) /roarr save  -> save settings to reload later")
+
 
   else
     chat("/roarr slot <n> | watch | chance <0-100> | cd <seconds> | on/off | info | reset | save | tutorial")
